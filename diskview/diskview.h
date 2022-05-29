@@ -11,6 +11,7 @@
 */
 
 #include <math.h>
+#include <nvboolfunc.h>
 
 #ifndef M_PI
 #define M_PI 3.14159
@@ -45,7 +46,7 @@ typedef struct __vertex_t
 
 // This is the color manipulation union ... ABGR for windows ...
 
-typedef union __color_t
+/*typedef union __color_t
 {
 	struct __unpacked
 	{
@@ -57,7 +58,7 @@ typedef union __color_t
 	unsigned long int upacked;  // packed color
 	long int packed;			  // packed color signed
 	unsigned  char b8_array[4]; // array of component
-} color_t;
+} color_t;*/
 
 
 class __declspec(dllexport) diskview_t

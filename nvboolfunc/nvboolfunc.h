@@ -2,7 +2,7 @@
 #define __NVBOOLFUNC_H__
 
 
-#include <diskview.h>
+//#include <diskview.h>
 #include <bit_vector.h>
 #include <nvinput.h>
 
@@ -10,6 +10,21 @@
 #include <iterator>
 
 #include "data3d.h"
+
+// This is the color manipulation union ... ABGR for windows ...
+typedef union __color_t
+{
+	struct __unpacked
+	{
+		unsigned char r; // Red component
+		unsigned char g; // Green component
+		unsigned char b; // Blue component
+		unsigned char a; // Alpha component
+	} unpacked;
+	unsigned long int upacked;  // packed color
+	long int packed;			  // packed color signed
+	unsigned  char b8_array[4]; // array of component
+} color_t;
 
 //This is one data set. One vector with a value (true/false).
 //One square that is drawn.  One section of the 3d top.
