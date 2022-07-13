@@ -64,6 +64,9 @@ protected:
 	afx_msg void OnBrowse();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnCbnSelchangeType();
+	afx_msg void OnStnClickedDataTxt();
 };
 
 //{{AFX_INSERT_LOCATION}}

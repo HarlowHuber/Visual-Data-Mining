@@ -64,6 +64,8 @@ BEGIN_MESSAGE_MAP(inputcfg_t, CDialog)
 	ON_BN_CLICKED(IDC_INPUT_FILE, OnInputFile)
 	ON_BN_CLICKED(IDC_BROWSE, OnBrowse)
 	//}}AFX_MSG_MAP
+	//ON_CBN_SELCHANGE(FILE_TYPE, &inputcfg_t::OnCbnSelchangeType)
+	//ON_STN_CLICKED(IDC_DATA_TXT, &inputcfg_t::OnStnClickedDataTxt)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
